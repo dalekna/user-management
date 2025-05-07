@@ -1,0 +1,12 @@
+2025-04-15 10:00:24 - Naujas vartotojas: lenkas@gmail.com
+2025-04-15 10:00:28 - Klaida įrašant vartotoją: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'lenkas@gmail.com' for key 'email'
+2025-04-15 10:01:03 - Klaida įrašant vartotoją: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'lenkas@gmail.com' for key 'email'
+2025-04-15 10:01:07 - Klaida įrašant vartotoją: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'lenkas@gmail.com' for key 'email'
+2025-04-15 10:01:26 - Klaida įrašant vartotoją: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'lenkas@gmail.com' for key 'email'
+2025-04-15 10:01:43 - Naujas vartotojas: lenkas2@gmail.com
+2025-04-15 10:01:47 - Prisijungė: lenkas@gmail.com
+2025-04-15 10:01:48 - Prisijungė: lenkas@gmail.com
+2025-04-15 20:16:42 - Naujas vartotojas: lenkas3@gmial.com
+2025-04-15 20:16:48 - Prisijungė: lenkas3@gmial.com
+2025-04-15 20:20:33 - Prisijungė: lenkas3@gmial.com
+2025-04-15 20:22:38 - Naujas vartotojas: petras@gm.com
