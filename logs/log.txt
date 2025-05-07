@@ -10,3 +10,24 @@
 2025-04-15 20:16:48 - Prisijungė: lenkas3@gmial.com
 2025-04-15 20:20:33 - Prisijungė: lenkas3@gmial.com
 2025-04-15 20:22:38 - Naujas vartotojas: petras@gm.com
+2025-05-07 20:13:53 - ::1 - Klaida įrašant vartotoją: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'surname' in 'field list'
+2025-05-07 20:14:25 - ::1 - Klaida įrašant vartotoją: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'surname' in 'field list'
+2025-05-07 20:17:52 - ::1 - Klaida įrašant vartotoją: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'surname' in 'field list'
+2025-05-07 20:19:51 - ::1 - Klaida įrašant vartotoją: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'surname' in 'field list'
+2025-05-07 20:21:27 - ::1 - Klaida įrašant vartotoją: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'surname' in 'field list'
+2025-05-07 20:22:05 - ::1 - Klaida įrašant vartotoją: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'surname' in 'field list'
+2025-05-07 20:22:42 - ::1 - Klaida įrašant vartotoją: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'surname' in 'field list'
+2025-05-07 20:30:11 - ::1 - Naujas vartotojas: medis@bebras.lt
+2025-05-07 20:32:46 - ::1 - Prisijungė: medis@bebras.lt
+2025-05-07 20:34:15 - ::1 - Prisijungė: medis@bebras.lt
+2025-05-07 20:34:26 - ::1 - Prisijungė: medis@bebras.lt
+2025-05-07 20:39:36 - ::1 - Prisijungė: medis@bebras.lt
+2025-05-07 20:45:25 - ::1 - Prisijungė: medis@bebras.lt
+2025-05-07 20:48:30 - ::1 - Prisijungė: medis@bebras.lt
+2025-05-07 20:51:31 - ::1 - Prisijungė: medis@bebras.lt
+2025-05-07 21:01:43 - ::1 - Prisijungė: medis@bebras.lt
+2025-05-07 21:12:00 - ::1 - Prisijungė: medis@bebras.lt
+2025-05-07 21:16:46 - ::1 - Naujas vartotojas: kranas@geras.lt
+2025-05-07 21:16:54 - ::1 - Prisijungė: kranas@geras.lt
+2025-05-07 21:44:55 - ::1 - Naujas vartotojas: zaibas@trenke.lt
+2025-05-07 21:46:52 - ::1 - Prisijungė: zaibas@trenke.lt

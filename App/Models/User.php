@@ -11,8 +11,8 @@ class User extends AbstractUser {
     private \PDO $pdo;
     private string $role;
 
-    public function __construct(string $vardas, string $elpastas, string $slaptazodis, string $rolė = 'user') {
-        parent::__construct($vardas, $elpastas, $slaptazodis);
+    public function __construct(string $vardas, string $pavarde, string $elpastas, string $slaptazodis, string $rolė = 'user') {
+        parent::__construct($vardas, $pavarde, $elpastas, $slaptazodis);
         $this->pdo = Database::getInstance()->getConnection();
         $this->role = $rolė;
     }
@@ -23,12 +23,19 @@ class User extends AbstractUser {
 
     public function issaugoti(): bool {
         try {
-            $uzklausa = $this->pdo->prepare("INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)");
-            $rezultatas = $uzklausa->execute([$this->name, $this->email, $this->password, $this->role]);
-            $this->log("Naujas vartotojas: {$this->email}");
-            return $rezultatas;
-        } catch (\PDOException $klaida) {
-            $this->log("Klaida įrašant vartotoją: " . $klaida->getMessage());
+            $stmt = $this->pdo->prepare("INSERT INTO users (name, surname, email, password, role, created_at) VALUES (?, ?, ?, ?, ?, ?)");
+            $result = $stmt->execute([
+                $this->getName(),
+                $this->getSurname(),
+                $this->getEmail(),
+                $this->getPassword(),
+                $this->role,
+                $this->getCreatedAt()
+            ]);
+            $this->log("Naujas vartotojas: {$this->getEmail()}");
+            return $result;
+        } catch (\PDOException $e) {
+            $this->log("Klaida įrašant vartotoją: " . $e->getMessage());
             return false;
         }
     }

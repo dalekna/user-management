@@ -8,10 +8,15 @@ class Database {
     private function __construct() {
         $nustatymai = require __DIR__ . '/../../config.php';
         $dsn = "mysql:host={$nustatymai['host']};dbname={$nustatymai['dbname']};charset=utf8";
-        $this->pdo = new \PDO($dsn, $nustatymai['username'], $nustatymai['password']);
-        $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+    
+        try {
+            $this->pdo = new \PDO($dsn, $nustatymai['username'], $nustatymai['password']);
+            $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+        } catch (\PDOException $e) {
+            die("DB prisijungimo klaida: " . $e->getMessage());
+        }
     }
-
+    
     public static function getInstance(): self {
         if (!self::$instance) {
             self::$instance = new self();
